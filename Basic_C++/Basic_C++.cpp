@@ -92,5 +92,37 @@ int main()
 
     cout << name << endl;
 
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+    // 콘솔 입출력
+
+
+    char user_input[100];
+
+    /*
+
+    cout << "원하는 문장을 입력해주세요." << endl;
+    cout << "입력: ";
+
+    //cin >> user_input; // 중간에 빈칸이 있으면 더이상 받아오지 않는다. 그럴 땐 아래와 같이
+    cin.getline(user_input, sizeof(user_input));
+
+    cout << "메아리: " << user_input << endl;
+    */
+
+    int number = -1;
+
+    // cin >> user_input;
+    // cin.getline(user_input, sizeof(user_input));
+    cin.ignore(100, '\n');
+
+    cin >> number;
+
+    cout << user_input << " " << number << endl;
+
+     // 참고 : cin.ignore(numeric_limits<streamsize>::max(), '\n')
+
+
     return 0;
 }
